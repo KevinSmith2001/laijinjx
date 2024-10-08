@@ -1,0 +1,65 @@
+/* src/assets/styles/global.css */
+
+/* 重置浏览器默认样式 */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置通用字体和背景颜色 */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* 设置链接样式 */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 设置全局的盒模型 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 全局按钮样式 */
+button {
+    cursor: pointer;
+}
+
+/* 响应式设计，移动端适配 */
+@media screen and (max-width: 768px) {
+    .el-header {
+        flex-wrap: wrap;
+    }
+
+    .el-menu-demo {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .user-dropdown {
+        margin-top: 10px;
+    }
+
+    .el-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .el-input .el-input__inner {
+        height: 40px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    /* 其他需要调整的样式 */
+}
